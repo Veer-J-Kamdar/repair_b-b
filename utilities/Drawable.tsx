@@ -20,4 +20,5 @@ export const Drawable = {
   Scheduled: require('../assets/images/Scheduled.png'),
   Spare: require('../assets/images/Spare.png'),
   Wheel: require('../assets/images/Wheel.png'),
-}
+  Map: require('../assets/images/Map.png'),
+};

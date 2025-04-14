@@ -13,7 +13,7 @@ type ItemData = {
   image: any;
 };
 
-const UpcomingSection = (props: ItemData) => {
+const UpcomingSection = () => {
   const [upcomingSectionData, setUpcomingSectionData] = React.useState<
     ItemData[]
   >([]);
@@ -32,7 +32,6 @@ const UpcomingSection = (props: ItemData) => {
         keyExtractor={item => item.id.toString()}
         horizontal
         showsHorizontalScrollIndicator={false}
-        ItemSeparatorComponent={() => <View style={{width: 10}} />}
         ListEmptyComponent={() => <Text>No data available</Text>}
       />
     </View>

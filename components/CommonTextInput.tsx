@@ -7,6 +7,7 @@ type Props = {
   label: string;
   placeholder: string;
   secureText: boolean;
+  paragraph: boolean | undefined;
 };
 
 const CommonTextInput = (props: Props) => {
@@ -22,6 +23,7 @@ const CommonTextInput = (props: Props) => {
             background: Colors.light.background,
           },
         }}
+        multiline={props.paragraph}
         activeOutlineColor={Colors.light.accent}
         secureTextEntry={props.secureText}
         textColor="black"

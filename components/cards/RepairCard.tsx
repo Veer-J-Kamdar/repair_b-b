@@ -1,22 +1,24 @@
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet} from 'react-native';
 import React from 'react';
+import {TouchableRipple} from 'react-native-paper';
 
 type Props = {
   item: {
     id: number;
     image: any;
+    goto: any;
   };
 };
 
 const RepairCard = (props: Props) => {
   return (
-    <View>
+    <TouchableRipple key={props.item.id} onPress={props.item.goto}>
       <Image
         source={props.item.image}
         style={styles.image}
         resizeMode="contain"
       />
-    </View>
+    </TouchableRipple>
   );
 };
 

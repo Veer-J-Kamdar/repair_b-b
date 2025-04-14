@@ -3,6 +3,7 @@ import React from 'react';
 import {Appbar} from 'react-native-paper';
 import {Colors} from '@/constants/Colors';
 import {Icons} from '@/utilities/Icons';
+import {router} from 'expo-router';
 
 type Props = {};
 
@@ -17,13 +18,13 @@ const Header = (props: Props) => {
       }}>
       <Appbar.Action
         icon={Icons.Home}
-        onPress={() => {}}
+        onPress={() => router.push('./sidemenu')}
         iconColor={Colors.light.background}
       />
       <Appbar.Content title="Repair B&B" titleStyle={styles.title} />
       <Appbar.Action
         icon="account-circle"
-        onPress={() => {}}
+        onPress={() => router.push('./sidemenu')}
         iconColor={Colors.light.background}
       />
     </Appbar.Header>

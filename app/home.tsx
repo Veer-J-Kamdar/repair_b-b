@@ -1,4 +1,4 @@
-import {ScrollView, StyleSheet, Text, View} from 'react-native';
+import {ScrollView, StyleSheet, View} from 'react-native';
 import React from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Header from '@/components/Header';
@@ -6,8 +6,6 @@ import CommonText from '@/components/CommonText';
 import {Colors} from '@/constants/Colors';
 import RepairSection from '@/components/sections/RepairSection';
 import {homeSections} from '@/constants/Constant';
-import UpcomingSection from '@/components/sections/UpcomingSection';
-import PastSection from '@/components/sections/PastSection';
 
 export default function home() {
   const [homeSectionData, setHomeSectionData] = React.useState<any[]>([]);

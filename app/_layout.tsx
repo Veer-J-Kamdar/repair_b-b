@@ -46,12 +46,16 @@ export default function RootLayout() {
   return (
     <>
       <StatusBar style="auto" />
-      <ThemeProvider value={colorScheme === 'dark' ? darkTheme : lightTheme}>
-        <Stack screenOptions={{headerShown: false}} initialRouteName="home">
-          <Stack.Screen name="home" />
-          <Stack.Screen name="(auth)" />
-        </Stack>
-      </ThemeProvider>
+      {/* <ThemeProvider value={colorScheme === 'dark' ? darkTheme : lightTheme}> */}
+      <Stack screenOptions={{headerShown: false}} initialRouteName="(auth)">
+        <Stack.Screen name="(auth)" />
+        <Stack.Screen name="home" />
+        <Stack.Screen name="emergencyPage" />
+        <Stack.Screen name="schedulePage" />
+        <Stack.Screen name="diyPage" />
+        <Stack.Screen name="myProfile" />
+      </Stack>
+      {/* </ThemeProvider> */}
     </>
   );
 }

@@ -13,7 +13,7 @@ type ItemData = {
   image: any;
 };
 
-const PastSection = (props: ItemData) => {
+const PastSection = () => {
   const [upcomingSectionData, setUpcomingSectionData] = React.useState<
     ItemData[]
   >([]);

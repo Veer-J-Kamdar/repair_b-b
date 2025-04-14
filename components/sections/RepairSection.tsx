@@ -8,9 +8,10 @@ import RepairCard from '../cards/RepairCard';
 type ItemData = {
   id: number;
   image: any;
+  goto: any;
 };
 
-const RepairSection = (props: ItemData) => {
+const RepairSection = () => {
   const [repairMenuData, setRepairMenuData] = React.useState<ItemData[]>([]);
 
   React.useEffect(() => {
