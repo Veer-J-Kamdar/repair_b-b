@@ -17,7 +17,9 @@ const ScheduleRepairItem = (props: Props) => {
   const onToggleSwitch = () => setIsSwitchOn(!isSwitchOn);
 
   return (
-    <View style={{flexDirection: 'row', alignItems: 'center'}}>
+    <View
+      key={props.item.id}
+      style={{flexDirection: 'row', alignItems: 'center'}}>
       <Switch
         value={isSwitchOn}
         onValueChange={onToggleSwitch}

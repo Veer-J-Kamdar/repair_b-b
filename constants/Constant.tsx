@@ -170,3 +170,52 @@ export const scheduleRepairList = [
     repairType: 'general checkup',
   },
 ];
+
+export const DIYCheckOn = [
+  {
+    id: 0,
+    image: Drawable.Brakes,
+  },
+  {
+    id: 1,
+    image: Drawable.Chain,
+  },
+  {
+    id: 2,
+    image: Drawable.Spare,
+  },
+];
+
+export const DIYArticle = [
+  {
+    id: 0,
+    title: 'Brakes',
+  },
+  {
+    id: 1,
+    title: 'Tires',
+  },
+  {
+    id: 2,
+    title: 'Chain & Transmission',
+  },
+  {
+    id: 3,
+    title: 'Other parts',
+  },
+];
+
+export const DIYRecommend = [
+  {
+    id: 0,
+    title: 'How to grease your chain',
+    desp: "Dos & Don'ts than won't stain.",
+    image: Drawable.Image1,
+  },
+  {
+    id: 1,
+    title: 'How to properly tune your tires',
+    desp: 'It’s not Rocket science but you need to know this.',
+    image: Drawable.Image2,
+  },
+];

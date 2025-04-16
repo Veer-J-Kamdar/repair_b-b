@@ -13,6 +13,7 @@ type Props = {
 const DrawerItemCard = (props: Props) => {
   return (
     <Drawer.Item
+      key={props.item.id}
       label={props.item.item}
       // active={active === props.item.id.toString()}
       onPress={() => {

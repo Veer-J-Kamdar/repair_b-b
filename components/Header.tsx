@@ -18,7 +18,7 @@ const Header = (props: Props) => {
       }}>
       <Appbar.Action
         icon={Icons.Home}
-        onPress={() => router.push('./sidemenu')}
+        onPress={() => router.push('/(drawer)/index')}
         iconColor={Colors.light.background}
       />
       <Appbar.Content title="Repair B&B" titleStyle={styles.title} />
