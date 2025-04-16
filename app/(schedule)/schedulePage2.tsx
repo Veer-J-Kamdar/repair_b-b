@@ -1,12 +1,12 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
-export default function diyPage() {
+export default function schedulePage2() {
   return (
     <View>
-      <Text>diy</Text>
+      <Text>schedulePage2</Text>
     </View>
-  ); 
+  );
 }
 
 const styles = StyleSheet.create({});

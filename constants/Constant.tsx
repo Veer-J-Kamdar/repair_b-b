@@ -9,7 +9,7 @@ export const repairMenu = [
     image: Drawable.Emergency,
     goto: () =>
       router.push({
-        pathname: './emergencyPage',
+        pathname: '/(emergency)',
         params: {heading: 'Emergency Repair'},
       }),
   },
@@ -18,7 +18,7 @@ export const repairMenu = [
     image: Drawable.Scheduled,
     goto: () =>
       router.push({
-        pathname: './schedulePage',
+        pathname: '/(schedule)',
         params: {heading: 'Schedule Repair'},
       }),
   },
@@ -27,7 +27,7 @@ export const repairMenu = [
     image: Drawable.DIY,
     goto: () =>
       router.push({
-        pathname: './diyPage',
+        pathname: '/(DIY)',
         params: {heading: 'DIY Repair'},
       }),
   },
@@ -80,51 +80,51 @@ export const homeSections = [
   },
 ];
 
-export const appMenu = [
-  {
-    id: 0,
-    item: 'Find Emergency Repair',
-    goto: () => router.push('./emergencyPage'),
-  },
-  {
-    id: 1,
-    item: 'Find Scheduled Repair',
-    goto: () => router.push('./schedulePage'),
-  },
-  {
-    id: 2,
-    item: 'Find DIY Repair',
-    goto: () => router.push('./diyPage'),
-  },
-  {
-    id: 3,
-    item: 'Repair Log',
-    goto: () => {},
-  },
-];
+// export const appMenu = [
+//   {
+//     id: 0,
+//     item: 'Find Emergency Repair',
+//     goto: () => router.push('./emergencyPage'),
+//   },
+//   {
+//     id: 1,
+//     item: 'Find Scheduled Repair',
+//     goto: () => router.push('./schedulePage'),
+//   },
+//   {
+//     id: 2,
+//     item: 'Find DIY Repair',
+//     goto: () => router.push('./diyPage'),
+//   },
+//   {
+//     id: 3,
+//     item: 'Repair Log',
+//     goto: () => {},
+//   },
+// ];
 
-export const userMenu = [
-  {
-    id: 0,
-    item: 'My Profile',
-    goto: () => router.push('./myProfile'),
-  },
-  {
-    id: 1,
-    item: 'My Bicycles',
-    goto: () => router.push('./myBicycle'),
-  },
-  {
-    id: 2,
-    item: 'Account Settings',
-    goto: () => {},
-  },
-  {
-    id: 3,
-    item: 'Sign out',
-    goto: () => router.push('./(auth)'),
-  },
-];
+// export const userMenu = [
+//   {
+//     id: 0,
+//     item: 'My Profile',
+//     goto: () => router.push('./myProfile'),
+//   },
+//   {
+//     id: 1,
+//     item: 'My Bicycles',
+//     goto: () => router.push('./myBicycle'),
+//   },
+//   {
+//     id: 2,
+//     item: 'Account Settings',
+//     goto: () => {},
+//   },
+//   {
+//     id: 3,
+//     item: 'Sign out',
+//     goto: () => router.push('./(auth)'),
+//   },
+// ];
 
 export const bikeType = [
   {
@@ -141,5 +141,32 @@ export const bikeType = [
     id: 2,
     bicycle: 'Elops 900 E',
     image: Drawable.RoadNotSelect,
+  },
+];
+
+export const scheduleRepairList = [
+  {
+    id: 0,
+    repairType: 'tires & wheels',
+  },
+  {
+    id: 1,
+    repairType: 'brakes',
+  },
+  {
+    id: 2,
+    repairType: 'gear shift',
+  },
+  {
+    id: 3,
+    repairType: 'chain',
+  },
+  {
+    id: 4,
+    repairType: 'battery & accessories',
+  },
+  {
+    id: 5,
+    repairType: 'general checkup',
   },
 ];

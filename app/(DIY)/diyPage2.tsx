@@ -1,10 +1,10 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
-export default function schedulePage() {
+export default function diyPage2() {
   return (
     <View>
-      <Text>schedule</Text>
+      <Text>diyPage2</Text>
     </View>
   );
 }

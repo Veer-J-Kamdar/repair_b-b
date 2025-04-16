@@ -17,6 +17,7 @@ const RepairSection = () => {
   React.useEffect(() => {
     setRepairMenuData(repairMenu);
   }, []);
+  
   const renderData: ListRenderItem<ItemData> = ({item}) => {
     return <RepairCard item={item} />;
   };

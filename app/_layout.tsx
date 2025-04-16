@@ -7,6 +7,7 @@ import {StatusBar} from 'expo-status-bar';
 import {useEffect} from 'react';
 import {useColorScheme} from 'react-native';
 import 'react-native-reanimated';
+import index from './(auth)/index';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -49,11 +50,13 @@ export default function RootLayout() {
       {/* <ThemeProvider value={colorScheme === 'dark' ? darkTheme : lightTheme}> */}
       <Stack screenOptions={{headerShown: false}} initialRouteName="(auth)">
         <Stack.Screen name="(auth)" />
+        <Stack.Screen name="index" />
         <Stack.Screen name="home" />
-        <Stack.Screen name="emergencyPage" />
-        <Stack.Screen name="schedulePage" />
-        <Stack.Screen name="diyPage" />
+        <Stack.Screen name="(emergency)" />
+        <Stack.Screen name="(schedule)" />
+        <Stack.Screen name="(DIY)" />
         <Stack.Screen name="myProfile" />
+        <Stack.Screen name="myBicycle" />
       </Stack>
       {/* </ThemeProvider> */}
     </>

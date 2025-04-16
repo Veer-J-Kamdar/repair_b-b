@@ -1,4 +1,4 @@
-import {Image, ScrollView, StyleSheet, Text, View} from 'react-native';
+import {Image, ScrollView, StyleSheet, View} from 'react-native';
 import React from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Header from '@/components/Header';
@@ -12,7 +12,7 @@ import CommonTextInput from '@/components/CommonTextInput';
 import {Drawable} from '@/utilities/Drawable';
 import {bikeType} from '@/constants/Constant';
 
-export default function emergencyPage() {
+export default function index() {
   const {heading} = useLocalSearchParams();
 
   return (
@@ -25,6 +25,7 @@ export default function emergencyPage() {
             label="Your Location"
             placeholder="ABC Street"
             secureText={false}
+            paragraph={false}
           />
           <Image source={Drawable.Map} style={styles.map} />
         </View>
@@ -35,15 +36,9 @@ export default function emergencyPage() {
           <CommonText
             text="Which bike are you riding ?"
             variant="titleLarge"
-            textStyle={{fontFamily: 'Regular', color: Colors.light.accent}}
+            textStyle={styles.textStyle}
           />
-          <View
-            style={{
-              flexDirection: 'row',
-              gap: 12,
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}>
+          <View style={styles.bikeContainer}>
             {bikeType.map(item => (
               <Image
                 key={item.bicycle}
@@ -60,7 +55,7 @@ export default function emergencyPage() {
           <CommonText
             text="Tell us what's wrong"
             variant="titleLarge"
-            textStyle={{fontFamily: 'Regular', color: Colors.light.accent}}
+            textStyle={styles.textStyle}
           />
           <CommonTextInput
             label="Please describe the problem"
@@ -76,6 +71,16 @@ export default function emergencyPage() {
 }
 
 const styles = StyleSheet.create({
+  textStyle: {
+    fontFamily: 'Bold',
+    color: Colors.light.accent,
+  },
+  bikeContainer: {
+    flexDirection: 'row',
+    gap: 12,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   map: {
     width: 'auto',
     height: 220,

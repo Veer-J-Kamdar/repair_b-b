@@ -7,7 +7,7 @@ import {Colors} from '@/constants/Colors';
 import RepairSection from '@/components/sections/RepairSection';
 import {homeSections} from '@/constants/Constant';
 
-export default function home() {
+export default function Home() {
   const [homeSectionData, setHomeSectionData] = React.useState<any[]>([]);
 
   React.useEffect(() => {
